@@ -11,7 +11,7 @@ window.onload = () => {
         if(location === '')
             errorMessage.textContent = 'You must enter location'
         else {
-            const url = 'http://localhost:3000/weather?search=' + location + '$'
+            const url = '/weather?search=' + location + '$'
             errorMessage.textContent = ''
             responseMessage.textContent = 'Loading ...'
             // Getting data from weather route
